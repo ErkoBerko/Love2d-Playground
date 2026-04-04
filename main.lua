@@ -9,6 +9,7 @@ local Font
 local SceneIdx = 1
 
 local Scenes = {
+    require"scene_2",
     require"scene_1",
 }
 
