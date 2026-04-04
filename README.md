@@ -30,7 +30,7 @@ git pull --recurse-submodules
 git submodule update --init --recursive
 ```
 
-###
+### Installing LÖVE
 
 Install LÖVE by following the instructions here https://love2d.org/wiki/Getting_Started
 
