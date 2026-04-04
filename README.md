@@ -30,6 +30,10 @@ git pull --recurse-submodules
 git submodule update --init --recursive
 ```
 
+###
+
+Install LÖVE by following the instructions here https://love2d.org/wiki/Getting_Started
+
 ## Application Usage
 
 ### Scene Selection
