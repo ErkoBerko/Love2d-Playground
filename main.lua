@@ -11,6 +11,7 @@ local SceneIdx = 1
 local Scenes = {
     require"scene_2",
     require"scene_1",
+    require"scene_3",
 }
 
 local function isPointInRectangle(px, py, x, y, w, h)
