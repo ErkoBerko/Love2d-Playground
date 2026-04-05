@@ -43,7 +43,9 @@ function love.draw()
 
     -- TODO: specific render for non-existent scene
     if #Scenes >= SceneIdx then
-        Scenes[SceneIdx].drawScene()
+        if Scenes[SceneIdx].drawScene then
+            Scenes[SceneIdx].drawScene()
+        end
     end
 
     love.graphics.setShader()
@@ -93,5 +95,29 @@ function love.keypressed(key, scanCode, isRepeat)
         SceneIdx = 9
     elseif key == "0" then
         SceneIdx = 10
+    end
+end
+
+function love.mousepressed(x, y, button, isTouch, presses)
+    if #Scenes >= SceneIdx then
+        if Scenes[SceneIdx].mousePressed then
+            Scenes[SceneIdx].mousePressed(x, y, button, isTouch, presses)
+        end
+    end
+end
+
+function love.mousereleased(x, y, button, isTouch, presses)
+    if #Scenes >= SceneIdx then
+        if Scenes[SceneIdx].mouseReleased then
+            Scenes[SceneIdx].mouseReleased(x, y, button, isTouch, presses)
+        end
+    end
+end
+
+function love.mousemoved(x, y, dx, dy, isTouch)
+    if #Scenes >= SceneIdx then
+        if Scenes[SceneIdx].mouseMoved then
+            Scenes[SceneIdx].mouseMoved(x, y, dx, dy, isTouch)
+        end
     end
 end
