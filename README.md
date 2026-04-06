@@ -46,3 +46,4 @@ press `r` to reload the Lua code while the program is running
 
 ## Future Updates
 - **Resilient hot-reloading** – allow Lua code to be hot-reloaded even after a runtime error has occurred.
+- Resolution-independent rendering
