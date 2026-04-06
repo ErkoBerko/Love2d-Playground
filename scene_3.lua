@@ -30,7 +30,7 @@ local function isPointInRectangle(px, py, x, y, w, h)
 end
 
 local paintBlock = {
-    doToggle="none",
+    action="none",
     x=0,
     y=0,
 }
