@@ -112,7 +112,7 @@ local function drawScene()
                 local color = paletteColors[block.colorIdx]
                 love.graphics.setColor(color.r, color.g, color.b)
             else
-                love.graphics.setColor(colors.colors[2].r, colors.colors[2].g, colors.colors[2].b)
+                love.graphics.setColor(1, 1, 1)
             end
             love.graphics.rectangle("fill", block.x, block.y, block.w, block.h)
         end
